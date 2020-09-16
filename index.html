@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="left-menu"></div>
+			<div class="logo">
+				<div id="signIn">
+						 <a href="#" id="closeReg" onclick="CloseSignIn()">&times;</a>
+				</div>
+				<button onClick="openSignIn()">Sign in</button>
+			</div>
+			<nav class="menu">
+				
+				
+				<div id="myNav" class="overlay">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <div class="overlay-content">
+					<a href="#">About</a>
+					<a href="#">Services</a>
+					<a href="#">Clients</a>
+					<a href="#">Contact</a>
+				  </div>
+				</div>
+				<span style="font-size:30px;cursor:pointer;float: right;margin-top: 10px;" onclick="openNav()">&#9776;</span>
+<!--				Navigation-->
+			</nav>
+		</header>
+		<section class="bg-1">
+			
+		</section>
+		<section class="bg-2"></section>
+	</div>
+	<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+		
+function openSignIn() {
+  document.getElementById("signIn").style.width = "50%";
+	document.getElementById("closeReg").style.opacity = "1";
+}
+		function CloseSignIn() {
+  document.getElementById("signIn").style.width = "0%";
+			document.getElementById("closeReg").style.opacity = "0";
+}
+</script>
+</body>
+</html>
