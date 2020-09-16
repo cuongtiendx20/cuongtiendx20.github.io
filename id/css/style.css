@@ -1,0 +1,142 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+/*Reset CSS*/
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Oswald', sans-serif;
+	
+}
+.container{
+	width: 100%;
+	height: auto;
+	background: red;
+	position: relative;
+}
+.header{
+	width: 100%;
+	height:100px;
+/*	background: blue;*/
+	padding:0 10px;
+	box-sizing: border-box;
+/*	position: absolute;*/
+	position: fixed;
+}
+.logo{
+	width: 10%;
+	height: 100px;
+/*	background: yellow;*/
+	float: left;
+	padding-top:21.5px;
+	box-sizing: border-box;
+/*	position: fixed;*/
+}
+.logo img{
+	width: 148px;
+}
+.menu{
+	width: 90%;
+	height: 100px;
+/*	background: rgba(29,195,135,1.00);*/
+	float: right;
+}
+.menu ul{
+	list-style: none;
+	text-align: right;
+	margin-top: 35px;
+}
+.menu ul li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.menu ul li a{
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	transition-duration: 0.2s;
+}
+.menu ul li a:hover{
+	color: #ff005a;
+}
+.active{
+	color: #ff005a !important;
+}
+.bg-parallax-1{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/awake16-parallax-img1.jpg);
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.bg-parallax-2{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/awake16-parallax-img2.jpg);
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: -40px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+/*  padding: 10px;*/
+  border-radius: 4px;
+  transform: rotate(-90deg);
+word-spacing: 5px;
+}
+
+#myBtn:hover {
+  color: #ff005a;
+}
+.sticky{
+	width: 45px;
+	height: 100px;
+/*	background: rgba(255,0,229,1.00);*/
+	position: fixed;
+	right:0;
+	bottom: 30%;
+	z-index: 9999;
+	font-size: 20px;
+}
+.sticky ul{
+	list-style: none;
+}
+.sticky ul li{
+	width: 45px;
+	height: 45px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 45px;
+	background: #ff005a
+}
+.sticky ul li:hover{
+	opacity: 0.8;
+}
+.sticky ul li a{
+	color: white;
+/*	background: pink;*/
+	display: block;
+}
+.sticky .cart-icon{
+	background: white;
+}
+.sticky .cart-icon a{
+	color: #ff005a;
+
+}
